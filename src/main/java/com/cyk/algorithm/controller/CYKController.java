@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CYKController {
     private CYKService service;
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*")
     @PostMapping
     public StatusDTO TestString(@RequestBody CaseDTO caseDTO) {
 
